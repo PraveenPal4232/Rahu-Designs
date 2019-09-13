@@ -276,9 +276,6 @@ a.demo--current {
 		display: block;
 		padding: 0.85em;
 	}
-	.content:not(.content--fixed) {
-		margin-bottom: 6em;
-	}
 	.codrops-header {
 		flex-direction: column;
 		align-items: center;

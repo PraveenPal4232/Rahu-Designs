@@ -10,7 +10,7 @@
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: -0.025em;
 	font-size: 7vw;
-	color: var(--color-title);
+	color: #fff;
 	line-height: 1;
 	margin: 0;
 	position: relative;
@@ -24,7 +24,7 @@
 	height: 200px;
 	background: url(../img/dot.png);
 	background-size: 25px;
-	opacity: 0.4;
+	opacity: 0.5;
 }
 
 .content__title::before {
