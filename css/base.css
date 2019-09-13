@@ -266,9 +266,6 @@ a.demo--current {
 }
 
 @media screen and (max-width: 55em) {
-	.message {
-		/* display: block; */
-	}
 	.content {
 		flex-direction: column;
 		height: auto;
