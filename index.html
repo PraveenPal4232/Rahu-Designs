@@ -52,11 +52,14 @@
 	</main>
 	<script type="text/javascript">
 		var hello = document.getElementById("lodder_data");
-		var myhello = setInterval(myTimer, 2000);
+		var myhello = setInterval(myTimer, 100);
 		i = 0;
 		function myTimer() {
 		  hello.innerHTML = i;
 		  i++;
+		  if( i > 500){
+			  break;
+		  }
 		}
 	</script>
 	<script src="js/demo.js"></script>
