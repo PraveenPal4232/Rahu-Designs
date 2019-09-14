@@ -4,11 +4,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 *::before {
 	box-sizing: border-box;
 }
-
-html {
-	background: #000;
-}
-
 body {
 	font-family: 'Barlow', Helvetica, Arial, sans-serif;
 	font-weight: 500;

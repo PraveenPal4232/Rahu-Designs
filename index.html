@@ -40,12 +40,23 @@
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
   <body>
-	  <nav>
-		  <div class="toggle">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-		  </div>
+		<div id="toggle">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+	  <nav id="my_nav">
+		  <a href="#">Work</a>
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Contect</a>
+		  <a href="#">Innovation by Design</a>
+		<div class="social_links">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">Instagram</a>
+			<a href="#">Youtube</a>
+		</div>
 	  </nav>
 	<main>
 		<div class="content">
@@ -55,6 +66,16 @@
 			</div>
 		</div>
 	</main>
+	<section>
+		<h1 class="heading_one">We are a brand strategy and design practice that believes deeper understanding creates better solutions.</h1>
+	</section>
+	<script>
+		document.getElementById("toggle").addEventListener("click", navFunction);
+			function navFunction() {
+			   var element = document.getElementById("my_nav");
+			   element.classList.toggle("nav_open");
+			}
+			</script>
 	<script src="js/demo.js"></script>
 	<script src="js/three.min.js"></script>
 	<script src="js/perlin.js"></script>

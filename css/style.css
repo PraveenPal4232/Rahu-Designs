@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rozha+One&display=swap');
+nav{
+    padding:20vh 1em 0 0;
+    position: fixed;
+    right:-100vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.nav_open{
+    right:0;
+}
+#toggle{
+    cursor: pointer;
+    padding:2em 1em;
+    position: fixed;
+    right: 0px;
+    z-index: 9;
+}
+#toggle div{
+    background-color: #191437;
+    width:30px;
+    height: 2px;
+    margin: 7px;
+}
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    color:#191437;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: right;
+    line-height: 3rem;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.social_links a{
+    font-size: .9rem;
+    padding: 0 .1rem;
+}
+.social_links{
+    text-align: right;
+    padding-top: 3em;
+}
+section{
+    height: 100vh;
+    padding: 3em;
+}
+.heading_one{
+    font-family: 'Rozha One', serif;
+    font-size: 5rem;
+    color:#191437;
+}
+@media screen and (min-width: 500px){
+    #toggle{
+        padding:3em;
+    }
+    nav{
+        padding:20vh 3em 3em;
+        position: fixed;
+        right:-50vw;
+        height: 100vh;
+        width: 50vw;
+        z-index: 2;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        transition: .5s;
+    }
+    nav a{
+        font-family: 'Open Sans', sans-serif;
+        color:#191437;
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: none;
+        text-align: right;
+        line-height: 4rem;
+    }
+    .social_links a{
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
