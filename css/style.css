@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rozha+One|Yatra+One&display=swap');
+html{
+    color: #191437;
+}
 nav{
     padding:20vh 1em 0 0;
     position: fixed;
@@ -56,8 +59,6 @@ nav a:hover{
 }
 section{
     height: 100vh;
-}
-#intro{
     padding: 5em 1em;
 }
 #work{
@@ -71,6 +72,16 @@ section{
     font-family: 'Yatra One', cursive;
     font-size: 2rem;
     color:#191437;
+}
+.work_box{
+    padding: 50px;
+    background-color: #fff;
+    align-self: center;
+    margin-top: 10vh;
+}
+.normal{
+    color: #191437;
+    font-weight: 600;
 }
 @media screen and (min-width: 500px){
     #toggle{
@@ -101,10 +112,17 @@ section{
         font-size: 1rem;
         padding: 0 1rem;
     }
-    #intro{
+    section{
         padding: 3em;
     }
     .heading_one{
         font-size: 6vw;
+    }
+    .work_box{
+        padding: 100px;
+        background-color: #fff;
+        align-self: center;
+        margin-top: 10vh;
+        width: 35%;
     }
 }
