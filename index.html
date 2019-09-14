@@ -36,10 +36,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Poppins:600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/pater.css" />
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
   <body>
+	  <div id="lodder">
+		<h1><span id="lodder_data">0</span> %</h1>
+	  </div>
 	<main>
 		<div class="content">
 			<canvas class="scene scene--full" id="scene"></canvas>
@@ -48,10 +50,20 @@
 			</div>
 		</div>
 	</main>
+	<script type="text/javascript">
+		var hello = document.getElementById("lodder_data");
+		var myhello = setInterval(myTimer, 2000);
+		i = 0;
+		function myTimer() {
+		  hello.innerHTML = i;
+		  i++;
+		}
+	</script>
 	<script src="js/demo.js"></script>
 	<script src="js/three.min.js"></script>
 	<script src="js/perlin.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/main.js"></script>
+	
   </body>
 </html>

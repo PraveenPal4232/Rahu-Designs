@@ -45,3 +45,17 @@
 		background-size: 12px;
 	}
 }
+
+#lodder{
+	background-color: #fff;
+	height:100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+}
+
+#lodder h1{
+	align-self: center;
+}
