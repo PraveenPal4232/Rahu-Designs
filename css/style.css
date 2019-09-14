@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rozha+One|Yatra+One&display=swap');
 nav{
     padding:20vh 1em 0 0;
     position: fixed;
@@ -13,6 +13,13 @@ nav{
 }
 .nav_open{
     right:0;
+}
+nav::after{
+    background-color: rgba(0,0,0,.2);
+    height:100vh;
+    width: 50vw;
+    z-index: 2;
+    display: block;
 }
 #toggle{
     cursor: pointer;
@@ -49,11 +56,14 @@ nav a:hover{
 }
 section{
     height: 100vh;
-    padding: 3em;
+}
+#intro{
+    padding: 5em 1em;
 }
 .heading_one{
     font-family: 'Rozha One', serif;
-    font-size: 5rem;
+    font-family: 'Yatra One', cursive;
+    font-size: 2rem;
     color:#191437;
 }
 @media screen and (min-width: 500px){
@@ -84,5 +94,11 @@ section{
     .social_links a{
         font-size: 1rem;
         padding: 0 1rem;
+    }
+    #intro{
+        padding: 3em;
+    }
+    .heading_one{
+        font-size: 5rem;
     }
 }
