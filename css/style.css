@@ -83,6 +83,29 @@ section{
     color: #191437;
     font-weight: 600;
 }
+footer{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+footer div{
+    padding: 10px 0;
+    text-align: c;
+}
+#mail_list input{
+    border:none;
+    background: transparent;
+    border-bottom: 2px solid #191437;
+    padding: 15px;
+}
+#footer_links a{
+    color:#191437;
+    text-decoration: none;
+    padding-right: 15px;
+}
+#footer_links a:hover{
+    text-decoration: underline;
+}
 @media screen and (min-width: 500px){
     #toggle{
         padding:3em;
@@ -124,5 +147,12 @@ section{
         align-self: center;
         margin-top: 10vh;
         width: 35%;
+    }
+    footer{
+        padding: 1em 3em;
+        /* flex-direction: row; */
+        justify-content: baseline;
+        justify-content: baseline;
+        display: g;
     }
 }
