@@ -7,6 +7,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 *::before {
 	box-sizing: border-box;
 }
+/* The very latest clearfix needed: http://cssmojo.com/the-very-latest-clearfix-reloaded/ */
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both; }
 body {
 	font-family: 'Barlow', Helvetica, Arial, sans-serif;
 	font-weight: 500;
@@ -23,6 +28,33 @@ body {
 }
 .text-right{
     text-align: right;
+}
+#sticky{
+    padding:2em 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+}
+#logo{
+    cursor: pointer;
+    float: left;
+}
+#logo a{
+    color: var(--color--text);
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+}
+#toggle{
+    cursor: pointer;
+    float: right;
+}
+#toggle span{
+    background-color: #191437;
+    width:30px;
+    height: 2px;
+    margin: 7px;
+    display: block;
 }
 nav{
     padding:20vh 1em 0 0;
@@ -46,31 +78,7 @@ nav::after{
     z-index: 2;
     display: block;
 }
-#logo{
-    cursor: pointer;
-    padding:2em 1em;
-    position: fixed;
-    ;eft: 0px;
-    z-index: 9;
-}
-#logo a{
-    color: var(--color--text);
-    font-family: 'Yatra One', cursive;
-    font-size: 30px;
-}
-#toggle{
-    cursor: pointer;
-    padding:2em 1em;
-    position: fixed;
-    right: 0px;
-    z-index: 9;
-}
-#toggle div{
-    background-color: #191437;
-    width:30px;
-    height: 2px;
-    margin: 7px;
-}
+
 nav a{
     color:#191437;
     font-weight: 700;

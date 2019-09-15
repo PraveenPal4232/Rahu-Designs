@@ -40,14 +40,17 @@
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
   <body>
-	  <div id="logo">
-		  <a href="#">Rahu Design</a>
-	  </div>
+	  <div id="sticky" class="clearfix">
+		<div id="logo">
+			<a href="#">Rahu Design</a>
+		</div>
 		<div id="toggle">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	  </div>
+	  
 	  <nav id="my_nav">
 		  <ul class="text-right">
 			  <li><a href="#">Work</a></li>
@@ -87,12 +90,6 @@
 			<a href="#">Privacy Policy</a>
 			<a href="#">Terms of Use</a>
 			<a href="#">Disclaimer</a>
-		</div>
-		<div id="mail_list">
-			<form action="/" method="get">
-			<input type="email" placeholder="Join Our Mailing List" required>
-			<input type="submit" required value="Join">
-			</form>
 		</div>
 		<div id="copy">
 			<p>© Rahu Design 2018-2019</p>
