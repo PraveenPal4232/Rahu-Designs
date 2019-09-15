@@ -35,6 +35,7 @@ body {
     width: 100%;
     z-index: 9;
     background-color: #fff;
+    transition: 0.5s;
 }
 #logo{
     cursor: pointer;
@@ -148,8 +149,7 @@ footer div{
     text-decoration: underline;
 }
 @media screen and (min-width: 768px){
-    #logo,
-    #toggle{
+    #sticky{
         padding:3em;
     }
     nav{

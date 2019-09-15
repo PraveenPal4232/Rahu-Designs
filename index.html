@@ -40,7 +40,7 @@
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
   <body>
-	  <div id="sticky" class="clearfix">
+	  <header id="sticky" class="clearfix">
 		<div id="logo">
 			<a href="#">Rahu Design</a>
 		</div>
@@ -49,7 +49,7 @@
 			<span></span>
 			<span></span>
 		</div>
-	  </div>
+	  </header>
 	  
 	  <nav id="my_nav">
 		  <ul class="text-right">
@@ -96,11 +96,26 @@
 		</div>
 	</footer>
 	<script>
-		document.getElementById("toggle").addEventListener("click", navFunction);
-			function navFunction() {
-			   var element = document.getElementById("my_nav");
-			   element.classList.toggle("nav_open");
-			}
+	document.getElementById("toggle").addEventListener("click", navFunction);
+		function navFunction() {
+		var element = document.getElementById("my_nav");
+		element.classList.toggle("nav_open");
+	}
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+  	if (prevScrollpos > currentScrollPos) {
+    document.getElementById("sticky").style.top = "0";
+  	} else {
+	if(window.innerWidth >= 768){
+		document.getElementById("sticky").style.top = "-142px";	
+	}
+	else{
+		document.getElementById("sticky").style.top = "-110px";
+	}
+  	}
+  prevScrollpos = currentScrollPos;
+	}
 			</script>
 	<script src="js/demo.js"></script>
 	<script src="js/three.min.js"></script>
