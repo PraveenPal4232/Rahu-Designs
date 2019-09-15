@@ -117,14 +117,15 @@
   prevScrollpos = currentScrollPos;
 	}
 	var elmnt = document.querySelector("html");
-	elmnt.addEventListener("scroll", function(){
-		if(elmnt.scrollTop <= window.innerHeight){
-		document.getElementById("sticky").style.backgroundColor = "transparent";
-	  }
+	window.onscroll = function() {myFunction()};
+	function myFunction() {
+  if (document.body.scrollTop > window || document.documentElement.scrollTop > window.innerHeight) {
+	document.getElementById("sticky").style.backgroundColor = "transparent";
+  }
 	  else{
 		document.getElementById("sticky").style.backgroundColor = "#fff";
 	  }
-	});
+	}
   	
 		</script>
 	<script src="js/demo.js"></script>
