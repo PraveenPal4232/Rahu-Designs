@@ -9,13 +9,12 @@ body {
 	font-family: 'Barlow', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	min-height: 100vh;
-	color: var(--color-text);
-	background-color: #000;
-	background-color: var(--color-bg);
+	color: var(--color--text);
+	background-color: var(--color--bg);
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --color--text:#191437;
-    --purple--darkest: #16141a;
+    --color--bg: #fefefe;
     --purple--darkerer: #241f2e;
     --purple--darker: #3b3050;
 }
@@ -55,7 +54,6 @@ nav::after{
     margin: 7px;
 }
 nav a{
-    font-family: 'Open Sans', sans-serif;
     color:#191437;
     font-weight: 700;
     font-size: 1.5rem;
@@ -140,7 +138,6 @@ footer div{
         transition: .5s;
     }
     nav a{
-        font-family: 'Open Sans', sans-serif;
         color:#191437;
         font-weight: 700;
         font-size: 2rem;
