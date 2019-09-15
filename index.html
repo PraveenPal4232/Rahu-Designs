@@ -116,6 +116,10 @@
   	}
   prevScrollpos = currentScrollPos;
 	}
+	var elmnt = document.querySelector("body");
+  	if(elmnt.scrollTop <= window.innerHeight){
+		elmnt.style.backgroundColor = "transperent";
+	  }
 			</script>
 	<script src="js/demo.js"></script>
 	<script src="js/three.min.js"></script>
