@@ -103,7 +103,7 @@ section{
 .heading_one{
     font-family: 'Rozha One', serif;
     font-family: 'Yatra One', cursive;
-    font-size: 2rem;
+    font-size: calc(1em + 4.5vw);
     color:#191437;
 }
 .work_box{
@@ -170,9 +170,6 @@ footer div{
     }
     section{
         padding: 3em;
-    }
-    .heading_one{
-        font-size: calc(2em + 3vw);
     }
     .work_box{
         padding: 100px;
