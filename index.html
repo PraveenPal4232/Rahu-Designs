@@ -92,7 +92,7 @@
 			<a href="#">Disclaimer</a>
 		</div>
 		<div id="copy">
-			<p>© Rahu Design 2018-2019</p>
+			<span>© Rahu Design 2018-2019</span>
 		</div>
 	</footer>
 	<script>
@@ -102,7 +102,7 @@
 		element.classList.toggle("nav_open");
 	}
 	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
+	function hide_nav() {
 	var currentScrollPos = window.pageYOffset;
   	if (prevScrollpos > currentScrollPos) {
     document.getElementById("sticky").style.top = "0";
@@ -119,11 +119,12 @@
 	var elmnt = document.querySelector("html");
 	window.onscroll = function() {myFunction()};
 	function myFunction() {
+		hide_nav();
   if (document.body.scrollTop > window || document.documentElement.scrollTop > window.innerHeight) {
-	document.getElementById("sticky").style.backgroundColor = "transparent";
+	document.getElementById("sticky").style.backgroundColor = "#fff";
   }
 	  else{
-		document.getElementById("sticky").style.backgroundColor = "#fff";
+		document.getElementById("sticky").style.backgroundColor = "transparent";
 	  }
 	}
   	

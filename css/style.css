@@ -190,7 +190,4 @@ footer div{
         flex-direction: row;
         justify-content: space-between;
     }
-    #footer_links{
-        padding: 20px 0;
-    }
 }
