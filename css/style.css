@@ -150,9 +150,10 @@ footer div{
     }
     footer{
         padding: 1em 3em;
-        /* flex-direction: row; */
-        justify-content: baseline;
-        justify-content: baseline;
-        display: g;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer_links{
+        padding: 20px 0;
     }
 }
