@@ -15,8 +15,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     --color--text:#191437;
     --color--bg: #fefefe;
-    --purple--darkerer: #241f2e;
-    --purple--darker: #3b3050;
 }
 nav{
     padding:20vh 1em 0 0;
