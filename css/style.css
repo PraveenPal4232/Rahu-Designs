@@ -34,7 +34,6 @@ body {
     position: fixed;
     width: 100%;
     z-index: 9;
-    background-color: #fff;
     transition: 0.5s;
 }
 #logo{
