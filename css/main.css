@@ -159,3 +159,11 @@ main {
 	will-change: transform;
 	filter: var(--filter-img);
 }
+.content-box {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+}
