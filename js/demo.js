@@ -26,11 +26,8 @@
 		}
 		navigate(linkEl);
 	});
-	
-}
 
-{
-    // body element
+	// body element
     const body = document.body;
 
     // helper functions
@@ -205,3 +202,4 @@
         new ImageTrail();
     });
 }
+

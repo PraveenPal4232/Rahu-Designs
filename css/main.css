@@ -135,14 +135,14 @@ main {
 	left: 50%;
 	margin-left: -75vmin;
 }
-.content__title {
+.content__title2 {
 	font-family: forma-djr-display, sans-serif;
 	font-weight: 700;
 	position: relative;
 	z-index: 10000;
 	font-size: 27vw;
 	mix-blend-mode: var(--blendmode-title);
-	-webkit-text-stroke: 2px var(--color-title);
+	-webkit-text-stroke: 2px var(--color--text);
 	text-stroke: 2px var(--color-title);
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
