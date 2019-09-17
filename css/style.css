@@ -20,6 +20,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     --color--text:#191437;
     --color--bg: #fefefe;
+    --color--white: #fff;
 }
 a{
     color: var(--color--text);
