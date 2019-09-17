@@ -136,7 +136,7 @@ main {
 	margin-left: -75vmin;
 }
 .content__title2 {
-	font-family: forma-djr-display, sans-serif;
+	font-family: 'Barlow', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	position: relative;
 	z-index: 10000;
@@ -160,7 +160,8 @@ main {
 	filter: var(--filter-img);
 }
 .content-box {
-    height: 300px;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
