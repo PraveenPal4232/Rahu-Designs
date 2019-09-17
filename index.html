@@ -38,6 +38,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<style>
+	
+	</style>
   </head>
   <body>
 	  <header id="sticky" class="clearfix">
@@ -122,9 +125,17 @@
 		hide_nav();
   if (document.body.scrollTop > window || document.documentElement.scrollTop > window.innerHeight) {
 	document.getElementById("sticky").style.backgroundColor = "#fff";
+	document.getElementById("logo").firstElementChild.style.color = "#191437";
+	document.getElementById("toggle").children[0].style.backgroundColor = "#191437";
+	document.getElementById("toggle").children[1].style.backgroundColor = "#191437";
+	document.getElementById("toggle").children[2].style.backgroundColor = "#191437";
   }
 	  else{
 		document.getElementById("sticky").style.backgroundColor = "transparent";
+		document.getElementById("logo").firstElementChild.style.color = "#fff";
+		document.getElementById("toggle").children[0].style.backgroundColor = "#fff";
+		document.getElementById("toggle").children[1].style.backgroundColor = "#fff";
+		document.getElementById("toggle").children[2].style.backgroundColor = "#fff";
 	  }
 	}
   	
