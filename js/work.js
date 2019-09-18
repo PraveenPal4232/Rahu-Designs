@@ -74,7 +74,7 @@
     class ImageTrail {
         constructor() {
             // images container
-            this.DOM = {content: document.querySelector('.content')};
+            this.DOM = {content: document.querySelector('.content-box')};
             // array of Image objs, one per image element
             this.images = [];
             [...this.DOM.content.querySelectorAll('img')].forEach(img => this.images.push(new Image(img)));
