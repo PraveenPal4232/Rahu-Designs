@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Studio | Rahu Designs | Graphic, Web and Video Solutions</title>
+    <title>Rahu Designs | Graphic, Web and Video Solutions</title>
 	    <!-- meta tegs -->
 	<link href="fab.png" rel="shortcut icon" type="fab.png">
 	<link rel="canonical" href="http://rahudesigns.com/" />
@@ -33,9 +33,137 @@
 	<meta property="og:title" content="Rahu Designs | Complete Graphic, Web and Video solutions"/>
 	<meta property="og:description" content="Rahu Designs are the best Animation, Graphic Designing, Web Designing & Development studio in Malviya Nagar, Kalkaji, South ex, Faridabad, Gurugram, Gurgoan, New Delhi" />
 	<meta property="og:site_name" content="Rahu Designs | Complete Graphic, Web and Video solutions"/>
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Poppins:600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
-  <body>
-		<h1>Hello RAhu Designs</h1>
+  <body class="demo-1 loading">
+	  <header id="sticky" class="clearfix">
+		<div id="logo">
+			<a href="#" class="normal_link">Rahu Design</a>
+		</div>
+		<div id="toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	  </header>
+	  
+	  <nav id="my_nav">
+		  <ul class="text-right">
+			  <li><a href="#">Work</a></li>
+			  <li><a href="#">Studio</a></li>
+			  <li><a href="#">Services</a></li>
+			  <li><a href="#">Contect</a></li>
+			  <li><a href="#">Innovation by Design</a></li>
+		  </ul>  
+		<div class="social_links">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">Instagram</a>
+			<a href="#">Youtube</a>
+		</div>
+	  </nav>
+		<div class="content">
+			<canvas class="scene scene--full" id="scene"></canvas>
+			<div class="content__inner">
+				<h2 class="content__title">Rahu Designs</h2>
+			</div>
+		</div>
+	<section id="intro">
+		<h1 class="heading_one">We are a brand strategy and design practice that believes deeper understanding creates better solutions.</h1>
+	</section>
+	<div class="content-box">
+		<img class="content__img" src="img/1.jpg" alt="Some image" />
+		<img class="content__img" src="img/2.jpg" alt="Some image" />
+		<img class="content__img" src="img/3.jpg" alt="Some image" />
+		<img class="content__img" src="img/4.jpg" alt="Some image" />
+		<img class="content__img" src="img/5.jpg" alt="Some image" />
+		<img class="content__img" src="img/6.jpg" alt="Some image" />
+		<img class="content__img" src="img/7.jpg" alt="Some image" />
+		<img class="content__img" src="img/8.jpg" alt="Some image" />
+		<img class="content__img" src="img/9.jpg" alt="Some image" />
+		<img class="content__img" src="img/10.jpg" alt="Some image" />
+		<img class="content__img" src="img/11.jpg" alt="Some image" />
+		<img class="content__img" src="img/12.jpg" alt="Some image" />
+		<img class="content__img" src="img/13.jpg" alt="Some image" />
+		<img class="content__img" src="img/14.jpg" alt="Some image" />
+		<img class="content__img" src="img/15.jpg" alt="Some image" />
+		<h3 class="content__title2">WORK</h3>
+	</div><!--/content-->
+	<section id="work">
+		<div class="work_box">
+			<h2>Photoshoot</h2>
+			<p>Apart from the latest trends in fashion and style, it was this beauty that was the showstopper during the Rolex Watches.</p>
+			<p><a href="#" class="normal">Learn More</a></p>
+		</div>
+	</section>
+	<footer>
+		<div id="footer_links">
+			<a href="#">Terms and Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms of Use</a>
+			<a href="#">Disclaimer</a>
+		</div>
+		<div id="copy">
+			<span>© Rahu Designs 2018-2019</span>
+		</div>
+	</footer>
+	<script>
+	document.getElementById("toggle").addEventListener("click", navFunction);
+		function navFunction() {
+		var element = document.getElementById("my_nav");
+		element.classList.toggle("nav_open");
+	}
+	var prevScrollpos = window.pageYOffset;
+	function hide_nav() {
+	var currentScrollPos = window.pageYOffset;
+  	if (prevScrollpos > currentScrollPos) {
+    document.getElementById("sticky").style.top = "0";
+  	} else {
+	if(window.innerWidth >= 768){
+		document.getElementById("sticky").style.top = "-142px";	
+	}
+	else{
+		document.getElementById("sticky").style.top = "-110px";
+	}
+  	}
+  prevScrollpos = currentScrollPos;
+	}
+	var elmnt = document.querySelector("html");
+	window.onscroll = function() {myFunction()};
+	function myFunction() {
+		hide_nav();
+  if (document.body.scrollTop > window || document.documentElement.scrollTop > window.innerHeight) {
+	document.getElementById("sticky").style.backgroundColor = "#fff";
+	/*
+	document.getElementById("logo").firstElementChild.style.color = "#191437";
+	document.getElementById("toggle").children[0].style.backgroundColor = "#191437";
+	document.getElementById("toggle").children[1].style.backgroundColor = "#191437";
+	document.getElementById("toggle").children[2].style.backgroundColor = "#191437";
+	*/
+  }
+	  else{
+		document.getElementById("sticky").style.backgroundColor = "transparent";
+		/*
+		document.getElementById("logo").firstElementChild.style.color = "#fff";
+		document.getElementById("toggle").children[0].style.backgroundColor = "#fff";
+		document.getElementById("toggle").children[1].style.backgroundColor = "#fff";
+		document.getElementById("toggle").children[2].style.backgroundColor = "#fff";
+		*/
+	  }
+	}
+  	
+		</script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/perlin.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/work.js"></script>
+	
+	
   </body>
 </html>
