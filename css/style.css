@@ -147,7 +147,7 @@ footer div{
     text-align: center;
 }
 .intro{
-    padding: 5em 1em;
+    padding: 5em 1em 0;
 }
 @media screen and (min-width: 768px){
     #sticky{
@@ -184,5 +184,8 @@ footer div{
         padding: 1em 3em;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .intro{
+        padding: 10em 3em 0;
     }
 }
