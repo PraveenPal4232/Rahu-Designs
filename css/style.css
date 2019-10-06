@@ -68,7 +68,7 @@ a:hover{
 }
 #logo a{
     color: var(--color--text);
-    font-family: 'Yatra One', cursive;
+    font-family: CaslonDOT-Graphique;
     font-size: 30px;
 }
 #toggle{
@@ -96,6 +96,7 @@ nav{
 }
 .nav_open{
     right:0;
+    box-shadow: -50vw 0px 0px rgba(0,0,0,.5);
 }
 nav::after{
     background-color: rgba(0,0,0,.2);
@@ -104,7 +105,6 @@ nav::after{
     z-index: 2;
     display: block;
 }
-
 nav a{
     color:#191437;
     font-weight: 700;
@@ -120,7 +120,9 @@ nav a{
     text-align: right;
     padding-top: 2em;
 }
-
+#intro{
+padding: 20vh 2em 20vh 1em;
+}
 #work{
     background-image: url("../img/work/photoshoot.jpg");
     background-position: center center;
@@ -128,11 +130,9 @@ nav a{
     background-size: cover;
 }
 .heading_one{
-    font-family: 'Rozha One', serif;
-    font-family: 'Yatra One', cursive;
-    font-family: 'Inknut Antiqua', serif;
     font-family: CaslonDOT-Graphique;
-    font-size: calc(1em + 4.5vw);
+    font-size: calc(1em + 5vw);
+    font-weight: 200;
     color:#191437;
 }
 .work_box{
@@ -193,7 +193,7 @@ footer div{
         flex-direction: row;
         justify-content: space-between;
     }
-    .intro{
-        padding: 10em 3em 0;
+    #intro{
+        padding: 10em 5em 5em 3em;
     }
 }
