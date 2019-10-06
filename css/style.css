@@ -69,7 +69,7 @@ a:hover{
 #logo a{
     color: var(--color--text);
     font-family: CaslonDOT-Graphique;
-    font-size: 40px;
+    font-size: 30px;
 }
 #toggle{
     cursor: pointer;
