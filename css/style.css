@@ -120,7 +120,7 @@ nav a{
     padding-top: 2em;
 }
 #intro{
-padding: 20vh 2em 10vh 1em;
+padding: 20vh 2em 2em 1em;
 }
 #work{
     background-image: url("../img/work/photoshoot.jpg");
@@ -157,7 +157,8 @@ footer div{
     color:#191437;
 }
 .heading_one{
-    font-family: 'Montserrat', sans-serif;
+    font-family: CaslonDOT-Graphique;
+    font-weight: 200;
 }
 .center{
     text-align: center;
@@ -165,8 +166,26 @@ footer div{
 main{
     padding: 0 1em;
 }
+#we_do{
+    background-color: aliceblue;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 .we_do_box{
     display: grid;
+    grid-gap: 1em;
+}
+.we_do_item{
+    padding: 2em;
+    background-color: #fff;
+}
+.we_do_item h2{
+    font-family: CaslonDOT-Graphique;
+    font-weight: 200;
+}
+.we_do_item img{
+    max-width: 100px;
+    margin: auto;
 }
 @media screen and (min-width: 768px){
     #sticky{
