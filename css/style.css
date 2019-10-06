@@ -177,7 +177,7 @@ main{
     grid-gap: 1em;
 }
 .we_do_item{
-    padding: 2em;
+    padding: 1em;
     background-color: #fff;
 }
 .we_do_item h2{
@@ -229,6 +229,10 @@ main{
     }
     main{
         padding: 0 3em;
+    }
+    #we_do {
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
     #intro{
         padding: 10em 5em 3em 3em;
