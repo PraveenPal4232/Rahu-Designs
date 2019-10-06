@@ -57,6 +57,7 @@
 	border: 0;
 	background: none;
 	font-weight: bold;
+	color: #fff;
 }
 
 .slidenav__item:focus {
@@ -79,6 +80,7 @@
 	font-family: CaslonDOT-Graphique;
 	font-size: calc(1em + 4vw);
 	font-weight: 200;
+	text-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
 
 .slide__desc {
@@ -88,6 +90,7 @@
 	cursor: default;
 	padding: 0 1em;
 	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
 
 .slide__link {
@@ -96,5 +99,6 @@
 	font-weight: bold;
 	padding: 1em 2em;
 	display: block;
+	color: #fff;
 	transition: color 0.3s, background 0.3s;
 }
