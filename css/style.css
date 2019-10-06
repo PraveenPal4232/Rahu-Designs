@@ -158,11 +158,15 @@ footer div{
 }
 .heading_one{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(1.5em + 2vw);
-    font-weight: 700;
 }
 .center{
     text-align: center;
+}
+main{
+    padding: 0 1em;
+}
+.we_do_box{
+    display: grid;
 }
 @media screen and (min-width: 768px){
     #sticky{
