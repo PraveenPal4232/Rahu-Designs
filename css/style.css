@@ -177,7 +177,7 @@ main{
     grid-gap: 1em;
 }
 .we_do_item{
-    padding: 1em;
+    padding: 2em;
     background-color: #fff;
 }
 .we_do_item h2{
@@ -230,6 +230,9 @@ main{
     main{
         padding: 0 3em;
     }
+    .heading_one{
+        margin-bottom: 1.5em;
+    }
     #we_do {
         padding-top: 5em;
         padding-bottom: 5em;
@@ -240,5 +243,8 @@ main{
     .we_do_box{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 2em;
+    }
+    .we_do_item{
+        padding: 1em;
     }
 }
