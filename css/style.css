@@ -61,6 +61,7 @@ a:hover{
     width: 100%;
     z-index: 9;
     transition: 0.5s;
+    background-color: #fff;
 }
 #logo{
     cursor: pointer;
@@ -146,6 +147,7 @@ footer div{
 }
 .heading_one{
     font-family: CaslonDOT-Graphique;
+    font-size: calc(2em + 1.5vw);
     font-weight: 200;
     margin-bottom: 1em;
 }
@@ -157,8 +159,8 @@ main{
 }
 #we_do{
     background-color: aliceblue;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 .we_do_box{
     display: grid;
@@ -218,8 +220,8 @@ main{
         margin-bottom: 1.5em;
     }
     #we_do {
-        padding-top: 5em;
-        padding-bottom: 5em;
+        padding-top: 6em;
+        padding-bottom: 8em;
     }
     #intro{
         padding: 10em 5em 3em 3em;
