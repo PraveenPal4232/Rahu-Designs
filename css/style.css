@@ -192,6 +192,9 @@ main{
     #sticky{
         padding:3em;
     }
+    #logo a{
+        font-size: 40px;
+    }
     nav{
         padding:20vh 3em 3em;
         right:-50vw;
