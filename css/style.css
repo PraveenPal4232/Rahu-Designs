@@ -178,6 +178,18 @@ main{
     max-width: 100px;
     margin: auto;
 }
+#subscription{
+    background-color: aliceblue;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+.subscription_inner input{
+background-color: transparent;
+border: none;
+padding: .5em 1em;
+outline: 2px solid #191437;
+margin: 0 5px;
+}
 @media screen and (min-width: 768px){
     #sticky{
         padding:3em;
@@ -233,4 +245,7 @@ main{
     .we_do_item{
         padding: 1em;
     }
+    .subscription_inner input{
+        padding: 1em 2em;
+        }
 }
