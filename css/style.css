@@ -129,12 +129,6 @@ padding: 20vh 2em 20vh 1em;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.heading_one{
-    font-family: CaslonDOT-Graphique;
-    font-size: calc(1em + 5vw);
-    font-weight: 200;
-    color:#191437;
-}
 .work_box{
     padding: 50px;
     background-color: #fff;
@@ -156,6 +150,15 @@ footer div{
 }
 .intro{
     padding: 5em 1em 0;
+}
+#intro h1{
+    font-family: CaslonDOT-Graphique;
+    font-size: calc(1em + 5vw);
+    font-weight: 200;
+    color:#191437;
+}
+.center{
+    text-align: center;
 }
 @media screen and (min-width: 768px){
     #sticky{
