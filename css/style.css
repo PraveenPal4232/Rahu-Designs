@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow|Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Montserrat:400,700,900&display=swap');
 /* font converted using font-converter.net. thank you! */
 @font-face {
     font-family: CaslonDOT-Graphique;
@@ -69,7 +69,7 @@ a:hover{
 #logo a{
     color: var(--color--text);
     font-family: CaslonDOT-Graphique;
-    font-size: 30px;
+    font-size: 40px;
 }
 #toggle{
     cursor: pointer;
@@ -158,7 +158,8 @@ footer div{
 }
 .heading_one{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(1.5em + 1.5vw);
+    font-size: calc(1.5em + 2vw);
+    font-weight: 700;
 }
 .center{
     text-align: center;
