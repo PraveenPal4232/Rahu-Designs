@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow|Rozha+One|Yatra+One|Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Montserrat:400,700&display=swap');
 /* font converted using font-converter.net. thank you! */
 @font-face {
     font-family: CaslonDOT-Graphique;
@@ -96,7 +96,6 @@ nav{
 }
 .nav_open{
     right:0;
-    box-shadow: -50vw 0px 0px rgba(0,0,0,.5);
 }
 nav::after{
     background-color: rgba(0,0,0,.2);
@@ -121,7 +120,7 @@ nav a{
     padding-top: 2em;
 }
 #intro{
-padding: 20vh 2em 20vh 1em;
+padding: 20vh 2em 10vh 1em;
 }
 #work{
     background-image: url("../img/work/photoshoot.jpg");
@@ -157,6 +156,10 @@ footer div{
     font-weight: 200;
     color:#191437;
 }
+.heading_one{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.5em + 1.5vw);
+}
 .center{
     text-align: center;
 }
@@ -170,6 +173,9 @@ footer div{
         height: 100vh;
         width: 50vw;
         z-index: 2;
+    }
+    .nav_open{
+        box-shadow: -50vw 0px 0px rgba(0,0,0,.5);
     }
     nav a{
         color:#191437;
@@ -197,6 +203,6 @@ footer div{
         justify-content: space-between;
     }
     #intro{
-        padding: 10em 5em 5em 3em;
+        padding: 10em 5em 3em 3em;
     }
 }
