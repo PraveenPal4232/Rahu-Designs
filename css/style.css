@@ -122,18 +122,6 @@ nav a{
 #intro{
 padding: 20vh 2em 2em 1em;
 }
-#work{
-    background-image: url("../img/work/photoshoot.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.work_box{
-    padding: 50px;
-    background-color: #fff;
-    align-self: center;
-    margin-top: 10vh;
-}
 .normal{
     color: #191437;
     font-weight: 600;
@@ -217,13 +205,6 @@ main{
     }
     section{
         padding: 3em;
-    }
-    .work_box{
-        padding: 100px;
-        background-color: #fff;
-        align-self: center;
-        margin-top: 10vh;
-        max-width: 450px;
     }
     footer{
         padding: 1em 3em;
