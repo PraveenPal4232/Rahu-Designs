@@ -153,6 +153,11 @@ footer div{
     font-weight: 200;
     color:#191437;
 }
+#intro h4{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
 .heading_one{
     font-family: CaslonDOT-Graphique;
     font-size: calc(2em + 1.5vw);
@@ -204,8 +209,7 @@ margin-bottom: 2em;
     background-color: #191437;
     color: #fff;
 }
-#team_work{
-background-image: url("../img/team.jpg");
+.full_img{
 height: 50vh;
 width: 100%;
 background-size: cover;
@@ -311,7 +315,7 @@ grid-gap: 1em;
         padding: 1em 2em;
         margin: 0 10px;
         }
-    #team_work{
+    .full_img{
         height: 100vh;
     }
     #team,
