@@ -145,7 +145,7 @@ footer div{
 }
 #intro h1{
     font-family: CaslonDOT-Graphique;
-    font-size: calc(1.5em + 3.5vw);
+    font-size: calc(1.4em + 4vw);
     font-weight: 200;
     color:#191437;
 }
@@ -212,6 +212,7 @@ text-transform: uppercase;
         height: 100vh;
         width: 50vw;
         z-index: 2;
+        box-shadow: -50vw 0px 0px rgba(0,0,0,.0);
     }
     .nav_open{
         box-shadow: -50vw 0px 0px rgba(0,0,0,.5);
@@ -245,7 +246,7 @@ text-transform: uppercase;
         padding-bottom: 8em;
     }
     #intro{
-        padding: 10em 5em 3em 3em;
+        padding: 10em 6em 3em 3em;
     }
     .we_do_box{
         grid-template-columns: 1fr 1fr 1fr 1fr;
