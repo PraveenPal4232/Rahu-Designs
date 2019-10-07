@@ -250,6 +250,11 @@ grid-gap: 1em;
     margin-top: 10px;
     letter-spacing: 5px;
 }
+.project_content{
+    font-family: 'Montserrat', sans-serif;
+    padding: 2em 1em;
+    line-height: 1.5rem;
+}
 @media screen and (min-width: 768px){
     #sticky{
         padding:3em;
@@ -331,5 +336,10 @@ grid-gap: 1em;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         background-color: rgba(25, 20, 55, 0.4);
+    }
+    .project_content{
+        font-family: 'Montserrat', sans-serif;
+        padding: 3em 25%;
+        line-height: 2rem;
     }
 }
