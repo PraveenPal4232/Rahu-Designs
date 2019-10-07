@@ -4,7 +4,7 @@
 	--color-link: #454847;
 	--color-link-hover: #fff;
 	--color-info: #454847;
-	--glitch-width: 40vmax;
+	--glitch-width: 100%;
 	--glitch-height: calc(40vmax * 1.25);
 	--color-title: #fff;
 	--color-subtitle: #30efbf;
@@ -106,24 +106,17 @@
 	--blend-color-5: transparent;
 }
 
-.grid {
-	margin: 50vh auto 0;
+.team {
     position: relative;
-    padding: 0 1em;
-    width: 100%;
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
 .grid__item {
-    margin: 0 0 40vh;
     position: relative;
 }
 
-.grid__item:nth-child(odd) {
-	margin-top: -40vh;
-}
 
 .grid__item-title {
 	position: absolute;
@@ -160,9 +153,19 @@
 
 @media screen and (max-width: 55em) {
 	.grid { grid-template-columns: 100%; margin-top: 3em; }
-	.grid__item { margin: 0 0 3em; }
 	.grid__item:nth-child(odd) { margin-top: 0; }
 	.grid__item-title, .grid__item:nth-child(odd) .grid__item-title { font-size: 2em; text-align: center; width: 100%; padding: 0; top: 20%; }
+}
+
+@media screen and (min-width: 768px){
+    .team {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        padding: 0 3em;
+    }
+    .grid__item {
+        margin:0;
+    }
 }
 
 /* Glitch styles */
