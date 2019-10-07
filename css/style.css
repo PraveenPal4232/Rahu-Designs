@@ -224,7 +224,7 @@ grid-gap: 1em;
 .project_item{
     position: relative;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;	
 }
 .project_item_info{
     padding: 5em 0 2em 1em;
@@ -232,6 +232,7 @@ grid-gap: 1em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     background-color: rgba(25, 20, 55, 0.4);
+    cursor: url('../img/eye.png'), auto;
 }
 .project_item_info h1{
     margin-bottom: 0px;
