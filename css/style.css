@@ -231,16 +231,16 @@ grid-gap: 1em;
     background-color: rgba(25, 20, 55, 0.4);
 }
 .project_item_info h1{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     letter-spacing: 5px;
     font-weight: 900;
 }
 .project_item_info a{
-    color: #fff;
     box-shadow: none;
-    font-weight: 900;
-    font-size: 12px;
-    letter-spacing: 3px;
+}
+.project_item_info p{
+    margin-top: 5px;
+    letter-spacing: 5px;
 }
 @media screen and (min-width: 768px){
     #sticky{
@@ -315,5 +315,12 @@ grid-gap: 1em;
     }
     .projects_grid{
         grid-template-columns: 1fr 1fr;
+    }
+    .project_item_info{
+        padding: 12em 0 5em 3em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        background-color: rgba(25, 20, 55, 0.4);
     }
 }
