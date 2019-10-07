@@ -109,7 +109,6 @@
 .team {
     position: relative;
     display: grid;
-    max-width: 1200px;
     grid-gap: 1em;
 }
 
@@ -129,12 +128,6 @@
 	top: 0;
 	pointer-events: none;
 	line-height: 1;
-}
-
-.grid__item:nth-child(odd) .grid__item-title {
-	right: 0;
-	text-align: right;
-	padding-top: 10vh;
 }
 
 .grid__item-title span {
@@ -161,7 +154,6 @@
     .team {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
-        padding: 0 3em;
     }
     .grid__item {
         margin:0;

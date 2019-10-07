@@ -279,4 +279,7 @@ padding: 2em 1em;
     #team_work{
         height: 100vh;
     }
+    #team{
+        padding: 2em 3em 5em 3em;
+    }
 }
