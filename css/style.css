@@ -214,6 +214,9 @@ background-position: center;
 #team{
 padding: 2em 1em;
 }
+#projects{
+padding-bottom: 2em;
+}
 .projects_grid{
 display: grid;
 grid-gap: 1em;
@@ -239,7 +242,7 @@ grid-gap: 1em;
     box-shadow: none;
 }
 .project_item_info p{
-    margin-top: 5px;
+    margin-top: 10px;
     letter-spacing: 5px;
 }
 @media screen and (min-width: 768px){
@@ -310,7 +313,8 @@ grid-gap: 1em;
     #team_work{
         height: 100vh;
     }
-    #team{
+    #team,
+    #projects{
         padding: 2em 3em 5em 3em;
     }
     .projects_grid{
