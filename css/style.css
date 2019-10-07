@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow|Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700|Montserrat:400,700,900&display=swap');
 /* font converted using font-converter.net. thank you! */
 @font-face {
     font-family: CaslonDOT-Graphique;
@@ -185,7 +185,7 @@ main{
 #subscription{
     background-color: aliceblue;
     padding-top: 2em;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 .subscription_inner input{
 background-color: transparent;
@@ -194,6 +194,7 @@ padding: .5em 1em;
 outline: 2px solid #191437;
 margin: 0 5px;
 text-transform: uppercase;
+margin-bottom: 2em;
 }
 .subscription_inner input[type="submit"]{
     background-color: #191437;
@@ -254,6 +255,11 @@ text-transform: uppercase;
     }
     .we_do_item{
         padding: 1em;
+    }
+    #subscription {
+        background-color: aliceblue;
+        padding-top: 2em;
+        padding-bottom: 5em;
     }
     .subscription_inner input{
         padding: 1em 2em;
