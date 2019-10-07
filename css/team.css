@@ -5,7 +5,7 @@
 	--color-link-hover: #fff;
 	--color-info: #454847;
 	--glitch-width: 100%;
-	--glitch-height: calc(40vmax * 1.25);
+	--glitch-height: calc(60vmax * 1.25);
 	--color-title: #fff;
 	--color-subtitle: #30efbf;
 }
@@ -120,12 +120,12 @@
 .grid__item-title {
 	position: absolute;
 	margin: 0;
-	font-size: 6vw;
+	font-size: 5vw;
 	color: var(--color-title);
 	font-family: 'Barlow', sans-serif;
 	font-weight: 800;
-	padding: 30vh 0.5em 0;
-	top: 0;
+	padding: 40px;
+	bottom: 0;
 	pointer-events: none;
 	line-height: 1;
 }
@@ -147,7 +147,7 @@
 @media screen and (max-width: 55em) {
 	.grid { grid-template-columns: 100%; margin-top: 3em; }
 	.grid__item:nth-child(odd) { margin-top: 0; }
-	.grid__item-title, .grid__item:nth-child(odd) .grid__item-title { font-size: 2em; text-align: center; width: 100%; padding: 0; top: 20%; }
+	.grid__item-title, .grid__item:nth-child(odd) .grid__item-title { font-size: 4em; text-align: center; width: 100%; padding: 0; bottom: 10%; }
 }
 
 @media screen and (min-width: 768px){
@@ -181,7 +181,7 @@
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../img/a.jpg) no-repeat 50% 0;
+	background: url(../img/Rahul-Kumar.jpg) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);
@@ -189,23 +189,23 @@
 }
 
 .glitch--style-2 .glitch__img {
-	background-image: url(../img/b.jpg);
+	background-image: url(../img/Praveen-Pal.jpg);
 }
 
 .glitch--style-3 .glitch__img {
-	background-image: url(../img/c.jpg);
+	background-image: url(../img/Ayush-Haldar.jpg);
 }
 
 .glitch--style-4 .glitch__img {
-	background-image: url(../img/d.jpg);
+	background-image: url(../img/Harshita-Panday.jpg);
 }
 
 .glitch--style-5 .glitch__img {
-	background-image: url(../img/e.jpg);
+	background-image: url(../img/Abhishek-Mohanty.jpg);
 }
 
 .glitch--style-6 .glitch__img {
-	background-image: url(../img/f.jpg);
+	background-image: url(../img/Katherine-Lightwood.jpg);
 }
 
 /* Set the background colors for the glitch images*/
