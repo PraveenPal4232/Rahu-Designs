@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700|Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700|Montserrat:500,700,900&display=swap');
 /* font converted using font-converter.net. thank you! */
 @font-face {
     font-family: CaslonDOT-Graphique;
@@ -224,8 +224,23 @@ grid-gap: 1em;
     background-size: cover;
 }
 .project_item_info{
-    padding: 50px 1em;
+    padding: 5em 0 2em 1em;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(25, 20, 55, 0.4);
+}
+.project_item_info h1{
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.project_item_info a{
+    color: #fff;
+    box-shadow: none;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 @media screen and (min-width: 768px){
     #sticky{
