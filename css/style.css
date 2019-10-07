@@ -145,7 +145,7 @@ footer div{
 }
 #intro h1{
     font-family: CaslonDOT-Graphique;
-    font-size: calc(1em + 5vw);
+    font-size: calc(1.5em + 3.5vw);
     font-weight: 200;
     color:#191437;
 }
