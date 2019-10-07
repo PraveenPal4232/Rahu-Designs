@@ -31,6 +31,9 @@ body {
     --color--text:#191437;
     --color--white: #fff;
 }
+img{
+    width: 100%;
+}
 a{
     color: var(--color--text);
     text-decoration: none;
@@ -211,6 +214,9 @@ background-position: center;
 #team{
 padding: 2em 1em;
 }
+.projects_grid{
+display: grid;
+}
 @media screen and (min-width: 768px){
     #sticky{
         padding:3em;
@@ -281,5 +287,9 @@ padding: 2em 1em;
     }
     #team{
         padding: 2em 3em 5em 3em;
+    }
+    .projects_grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
     }
 }
