@@ -216,6 +216,16 @@ padding: 2em 1em;
 }
 .projects_grid{
 display: grid;
+grid-gap: 1em;
+}
+.project_item{
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+.project_item_info{
+    padding: 50px 1em;
+    color: #fff;
 }
 @media screen and (min-width: 768px){
     #sticky{
@@ -290,6 +300,5 @@ display: grid;
     }
     .projects_grid{
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1px;
     }
 }
