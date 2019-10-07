@@ -50,7 +50,7 @@
 	left: 50%;
 	bottom: 0;
 	text-align: center;
-	padding: 2em;
+	padding: 4em;
 }
 
 .slidenav__item {
@@ -78,7 +78,7 @@
 	cursor: default;
 	line-height: 1;
 	font-family: CaslonDOT-Graphique;
-	font-size: calc(1em + 4vw);
+	font-size: calc(2em + 3vw);
 	font-weight: 200;
 	text-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
@@ -101,4 +101,7 @@
 	display: block;
 	color: #fff;
 	transition: color 0.3s, background 0.3s;
+}
+@media screen and (min-width: 768px){
+	
 }

@@ -136,6 +136,10 @@ footer div{
     padding: 10px 0;
     text-align: center;
 }
+#footer_links a{
+    display: inline-block;
+    margin: 5px;
+}
 .intro{
     padding: 5em 1em 0;
 }
