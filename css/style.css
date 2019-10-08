@@ -345,4 +345,10 @@ grid-gap: 1em;
         padding: 3em 25%;
         line-height: 2rem;
     }
+    .contact_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        text-align: center;
+    }
 }
