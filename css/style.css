@@ -121,7 +121,7 @@ nav a{
 }
 .social_links a{
     font-size: .9rem;
-    padding: 0 .1rem;
+    padding: 0 .25rem;
 }
 .social_links{
     text-align: right;
@@ -284,7 +284,7 @@ grid-gap: 1em;
     }
     .social_links a{
         font-size: 1rem;
-        padding: 0 1rem;
+        margin: 0 1rem;
     }
     section{
         padding: 3em;
