@@ -79,6 +79,9 @@ box-shadow: inset 0 -0.65em 0 #FEDC2A;
     font-family: CaslonDOT-Graphique;
     font-size: 30px;
 }
+#logo a img{
+    max-width: 30px;
+}
 #toggle{
     cursor: pointer;
     float: right;
@@ -305,7 +308,7 @@ grid-gap: 1em;
         padding-bottom: 8em;
     }
     #intro{
-        padding: 15em 10em 6em 3em;
+        padding: 13em 10em 6em 3em;
     }
     .we_do_box{
         grid-template-columns: 1fr 1fr 1fr 1fr;
