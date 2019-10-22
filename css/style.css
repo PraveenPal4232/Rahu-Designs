@@ -96,7 +96,7 @@ nav{
     right:-100vw;
     height: 100vh;
     width: 100vw;
-    z-index: 2;
+    z-index: 3;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -105,19 +105,26 @@ nav{
 .nav_open{
     right:0;
 }
-nav::after{
-    background-color: rgba(0,0,0,.2);
-    height:100vh;
-    width: 50vw;
-    z-index: 2;
-    display: block;
-}
 nav a{
     color:#191437;
     font-weight: 700;
     font-size: 1.5rem;
     text-align: right;
     line-height: 3rem;
+}
+#over{
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    width:100%;
+    z-index: 2;
+    pointer-events: none;
+    visibility: hidden;
+    transition: .5s;
+}
+.vis{
+    visibility: visible !important;
+    transition: .5s;
 }
 .social_links a{
     font-size: .9rem;
@@ -255,6 +262,9 @@ grid-gap: 1em;
     padding: 2em 1em;
     line-height: 1.5rem;
 }
+.project_content li{
+    list-style: square;
+}
 #contact{
     padding: 0 1em 2em 1em;
 }
@@ -270,11 +280,7 @@ grid-gap: 1em;
         right:-50vw;
         height: 100vh;
         width: 50vw;
-        z-index: 2;
-        box-shadow: -50vw 0px 0px rgba(0,0,0,.0);
-    }
-    .nav_open{
-        box-shadow: -50vw 0px 0px rgba(0,0,0,.5);
+        z-index: 3;
     }
     nav a{
         color:#191437;

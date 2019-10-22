@@ -1,7 +1,9 @@
 document.getElementById("toggle").addEventListener("click", navFunction);
 		function navFunction() {
 		var element = document.getElementById("my_nav");
+		var element2 = document.getElementById("over");
 		element.classList.toggle("nav_open");
+		element2.classList.toggle("vis");
 	}
 	var prevScrollpos = window.pageYOffset;
 	function hide_nav() {
