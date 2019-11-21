@@ -260,6 +260,8 @@ grid-gap: 1em;
 .project_content{
     font-family: 'Montserrat', sans-serif;
     padding: 2em 1em;
+}
+.project_content p{
     line-height: 1.5rem;
 }
 .project_content li{
