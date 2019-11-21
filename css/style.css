@@ -31,6 +31,9 @@ body {
     --color--text:#191437;
     --color--white: #fff;
 }
+::selection{
+    background-color: #FEDC2A;
+}
 img{
     width: 100%;
 }

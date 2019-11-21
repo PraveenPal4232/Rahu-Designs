@@ -25,3 +25,6 @@ document.getElementById("toggle").addEventListener("click", navFunction);
 	function myFunction() {
 		hide_nav();
 	}
+
+	console.log("hello World");
+	var g = document.getElementById("logo").children[0];
