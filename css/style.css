@@ -234,6 +234,7 @@ padding-bottom: 2em;
 .projects_grid{
 display: grid;
 grid-gap: 1em;
+padding: 1em;
 }
 .project_item{
     position: relative;
@@ -241,7 +242,7 @@ grid-gap: 1em;
     background-size: cover;	
 }
 .project_item_info{
-    padding: 5em 0 2em 1em;
+    padding: 5em 0 4em 1em;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
