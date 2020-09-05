@@ -63,6 +63,21 @@
       content="Rahu Designs | Complete Graphic, Web and Video solutions"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-128384653-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-128384653-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
   </head>
   <body>
     <header id="sticky" class="clearfix">
@@ -80,7 +95,7 @@
       <ul class="text-right">
         <li><a href="/work/">Work</a></li>
         <li><a href="../studio.html">Studio</a></li>
-        <li><a href="../contact.html">Contect</a></li>
+        <li><a href="../contact.html">Contact</a></li>
         <li><a href="../Innovation_by_design.html">Innovation by Design</a></li>
       </ul>
       <div class="social_links">
@@ -167,14 +182,16 @@
     <div id="subscription" class="text-center">
       <h1 class="heading_one">It’s easy to get started</h1>
       <div class="subscription_inner">
-        <form action="/action_page.php" target="_blank" method="POST">
+        <form action="/action_page.php" method="POST">
+          <label for="email">i</label>
           <input
             type="email"
-            name="email"
+            name="email_id"
             placeholder="Email"
             required="required"
+            id="email"
           />
-          <input type="submit" value="SUBMIT" required />
+          <input type="submit" value="Submit" required />
         </form>
       </div>
     </div>

@@ -1,10 +1,13 @@
 <?Php
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		$email=$_POST['email_id'];
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$phone=$_POST['phone'];
+		$idea=$_POST['idea'];
 		
 		$to='praveenpal4232@gmail.com';
-		$subject='It’s easy to get started';
-		$message="It’s easy to get started "."Email :".$email;
+		$subject='Query from contact page';
+		$message="User info "." Name : ".$name ." Email : ".$email." Phone : ".$phone." Idea : ".$idea;
 		$headers="Form: praveenpal4232@gmail.com";
 		
 		

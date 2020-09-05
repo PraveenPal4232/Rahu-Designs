@@ -259,6 +259,8 @@ a:active {
   width: 100%;
   padding: 0;
   overflow: hidden;
+  max-width: 900px;
+  margin: auto;
 }
 
 .video-responsive::before {
@@ -274,6 +276,18 @@ a:active {
   width: 100%;
   height: 100%;
   border: 0;
+  padding: 1em;
+}
+.contact-form{
+  /* margin: auto; */
+  max-width: 700px;
+}
+.contact-warp{
+  display: flex;
+  flex-wrap: wrap;
+}
+.m0{
+  margin: 0;
 }
 
 #sticky {
@@ -282,7 +296,7 @@ a:active {
   width: 100%;
   z-index: 9;
   transition: 0.5s;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 #logo {
   cursor: pointer;
@@ -368,6 +382,12 @@ footer div {
   display: inline-block;
   margin: 5px;
 }
+#home-banner{
+  padding: 0px;
+}
+#home-banner img{
+  margin:0px;
+}
 #intro h1 {
   font-family: CaslonDOT-Graphique;
   font-size: calc(1.7em + 3.5vw);
@@ -389,6 +409,9 @@ footer div {
   text-align: center;
 }
 main {
+  padding: 0 1em;
+}
+section{
   padding: 0 1em;
 }
 #we_do {
@@ -417,18 +440,28 @@ main {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.subscription_inner input {
+input,
+textarea,
+button {
   background-color: transparent;
   border: none;
   padding: 0.5em 1em;
   outline: 2px solid #191437;
   margin: 0 5px;
-  text-transform: uppercase;
   margin-bottom: 2em;
 }
-.subscription_inner input[type="submit"] {
+input[type="submit"],
+button[type="submit"] {
   background-color: #191437;
   color: #fff;
+  padding: 0.5em 2em;
+}
+.form-control {
+  display: block;
+  width: 100%;
+}
+textarea{
+  height: 150px;
 }
 .full_img {
   height: 50vh;
@@ -442,6 +475,7 @@ main {
 #projects {
   padding-bottom: 2em;
 }
+
 .projects_grid {
   display: grid;
   grid-gap: 1em;
@@ -482,8 +516,11 @@ main {
 .project_content li {
   list-style: square;
 }
-#contact {
-  padding: 0 1em 2em 1em;
+#contact{
+  padding: 1em;
+}
+.contact-form,.contact-map{
+  width: 100%;
 }
 .team-grid {
   display: flex;
@@ -508,8 +545,56 @@ main {
 .showcase {
   max-height: 100vh;
   object-fit: cover;
-  margin-bottom: 1em;
+  margin: 0.5em 0;
 }
+.service{
+  margin-bottom: 1.5em;
+}
+.service,.service-meta{
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-meta, .service-info{
+  width: 100%;
+}
+.service-count{
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  content: counter(numbered-headers);
+  counter-increment: numbered-headers;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+  text-align: center;
+  width: 40px;
+  margin-right: 1em;
+}
+.service-meta h2{
+  margin: 0;
+  align-self: center;
+}
+.service-info{
+  padding-left: 3.5em;
+  padding-right: 1em;
+}
+.service-info li {
+  font-size: 18px;
+  padding: .5em;
+  border-bottom: 1px solid var(--color--text);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.service-info li:hover{
+  padding-left: 1em;
+  transition: 0.5s;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
   #sticky {
@@ -535,8 +620,14 @@ main {
     font-size: 1rem;
     margin: 0 1rem;
   }
-  section {
+  section,#contact {
     padding: 3em;
+  }
+  .contact-form,.contact-map{
+    width: 50%;
+  }
+  .contact-map{
+    padding-left:2em;
   }
   footer {
     padding: 1em 3em;
@@ -569,10 +660,17 @@ main {
     padding-top: 2em;
     padding-bottom: 5em;
   }
-  .subscription_inner input {
-    padding: 1em 2em;
-    margin: 0 10px;
+input,
+button,
+textarea {
+    padding: 1em;
   }
+  input[type="submit"],
+button[type="submit"] {
+  background-color: #191437;
+  color: #fff;
+  padding: 1em 2em;
+}
   .full_img {
     height: 100vh;
   }
@@ -595,18 +693,48 @@ main {
     padding: 3em 25%;
     line-height: 2rem;
   }
-  #contact {
-    padding: 0 0 5em 0;
-  }
   .contact_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     text-align: center;
+    margin-top:2em;
   }
   .member {
     padding: 0 15px;
     flex: 0 0 33%;
     max-width: 33%;
   }
+  .service{
+    margin-bottom: 3em;
+  }
+  .service-meta{
+    width: 35%;
+    align-self: center;
+  }
+  .service-count{
+    margin-right: 2em;
+  }
+  .service-info{
+    width: 65%;
+  }
+  .service-info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-info li{
+    padding: 1em;
+    width: 45%;
+  }
+  .service-info li:nth-child(odd){
+    margin-right: 10%;
+  }
+  .service-info li:nth-child(1),
+  .service-info li:nth-child(2){
+  border-top: 1px solid var(--color--text);
+}
+.service-info li:hover{
+  padding-left: 2em;
+  transition: 0.5s;
+}
 }

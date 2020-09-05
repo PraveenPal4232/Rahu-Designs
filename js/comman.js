@@ -10,7 +10,14 @@ function hide_nav() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("sticky").style.top = "0";
+    if(window.scroll < 100){
+      true
+    }
+    else{
+    document.getElementById("sticky").style.backgroundColor = "#fff";
+  }
   } else {
+    document.getElementById("sticky").style.backgroundColor = "transperent";
     if (window.innerWidth >= 768) {
       document.getElementById("sticky").style.top = "-142px";
     } else {
